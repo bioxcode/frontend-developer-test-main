@@ -11,12 +11,12 @@ export const useTodos = (initialData: Todo[]) => {
         isCompleted: false,
     }]);
 
-    const completeTodo = (isCompleted: boolean, index: number) => setTodos(todos.map((t: Todo, i: number) => i === index ? {
-        ...t,
+    const completeTodo = (isCompleted: boolean, todoIndex: number) => setTodos(todos.map((todo: Todo, index: number) => index === todoIndex ? {
+        ...todo,
         isCompleted,
-    }: t));
+    }: todo));
 
-    const removeTodo = (index: number) => setTodos(todos.filter((t: Todo, i: number) => i !== index));
+    const removeTodo = (todoIndex: number) => setTodos(todos.filter((todo: Todo, index: number) => index !== todoIndex));
 
     const clearAllTodos = () => {
         setTodos([]);
