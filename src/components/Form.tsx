@@ -36,6 +36,7 @@ export const Form = ({ actions }: FormProps) => {
                     type="text"
                     value={inputValue}
                     onChange={handleChange}
+                    autoComplete="off"
                 />
                 <button type="submit" className="btn btn-primary" disabled={!inputValue}><FontAwesomeIcon icon={faPlus}/><span className="ms-2 d-none d-md-inline">Add Todo</span></button>
             </div>
