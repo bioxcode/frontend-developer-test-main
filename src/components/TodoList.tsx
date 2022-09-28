@@ -30,7 +30,7 @@ export const TodoList = () => {
                     </div>
                 ) : (
                     <div className="text-center p-3">
-                        <p className="mb-0 text-muted">No To do items</p>
+                        <p className="mb-0 text-muted">No Todo items</p>
                     </div>
                 )}
                 <div className="card-footer py-3">

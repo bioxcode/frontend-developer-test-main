@@ -29,7 +29,7 @@ export const Header = () => {
                         </div>
                         <div>
                             <button className="btn btn-outline-danger" disabled={!todosCount} onClick={() => actions.setShowModal(true)}>
-                                <FontAwesomeIcon icon={faTrash}/><span className="ms-2 d-none d-md-inline">Clear All</span>
+                                <FontAwesomeIcon icon={faTrash}/><span className="ms-2 d-none d-md-inline" data-testid="clear-all">Clear All</span>
                             </button>
                         </div>
                     </div>
